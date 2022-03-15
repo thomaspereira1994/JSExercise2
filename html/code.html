@@ -59,16 +59,41 @@
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //call hello world
-                        function HelloWorld(){
-                        alert("hello world");
-                        }
+                        //Controller Function
+function controllerFunction() {
+    let userInput = document.getElementById("userInput").value;
+
+    let reversedString = reverseString(userInput);
+
+    displayResult(reversedString);
+}
+
+//Function to reverse string
+function reverseString(userInput) {
+    let revString = [];
+
+    for (let index = userInput.length - 1; index >= 0; index--) {
+        revString += userInput[index];
+    }
+    return revString;
+}
+
+//Function to display result
+function displayResult(reversedString) {
+    document.getElementById("resultDisplayArea").value = reversedString;
+}
                     </code></pre>
                 </div>
                 <div class="col-lg-4 pt-2">
-                    <p>The Code is structured in one function.</p>
-                    <h5>Hello world</h5>
-                    <p>Hello world is a function that displays an alert with a message of hello world</p>
+                    <p>The Code is structured in three functions.</p>
+                    <h5>controllerFunction()</h5>
+                    <p>controllerFucntion() is the brains of the program. It gets the user input, calls the reverseString() function,
+                        and then calls the displayResult() function to display the result to the user.
+                    </p>
+                    <h5>reverseString()</h5>
+                    <p>reverseString() takes the user input as an argument, and reverses it via a for loop.</p>
+                    <h5>displayResult()</h5>
+                    <p>displayResult() assigns the reversed string to the text area in order to display the result.</p>
                 </div>
             </div>
         </div>

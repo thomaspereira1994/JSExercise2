@@ -54,16 +54,15 @@
     <!-- MAIN SECTION -->
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col border-end border-2">
-                    <h1>
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
                         String Reverser: A Coding Project
                     </h1>
 
-                    <h4 class="lead">
+                    <h4 class="lead py-0">
                         This program will reverse the text that is entered by the user.
                     </h4>
-
                     <h2>
                         Instructions
                     </h2>
@@ -72,9 +71,9 @@
                     </p>
                 </div>
                 <div class="col">
-                    <h3>
+                    <h5 class="border-1 border-bottom">
                         Enter text
-                    </h3>
+                    </h5>
                     <form>
                         <div class="col">
                             <input id="userInput" placeholder="Enter text" type="text" class="form-control"
@@ -88,7 +87,7 @@
                     <h2 class="mt-2 border-top border-2">
                         Results
                     </h2>
-                    <textarea id="resultDisplayArea" class="">
+                    <textarea id="resultDisplayArea">
                         
                     </textarea>
                 </div>
@@ -147,6 +146,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="/js/site.js"></script>
+    <script>
+        document.getElementById("reverseTextButton").addEventListener("click", controllerFunction)
+    </script>
 </body>
 
 </html>
