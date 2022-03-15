@@ -1,6 +1,5 @@
 //Controller Function
 function controllerFunction() {
-    //getUserInput();
     let userInput = document.getElementById("userInput").value;
 
     let reversedString = reverseString(userInput);
